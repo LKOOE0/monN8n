@@ -1,22 +1,22 @@
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
-  name: n8n-kevin
+  name: n8n-kevin-85bc5597d-xhdx8 
   labels:
-    name: n8n-kevin
+    name: n8n-kevin-85bc5597d-xhdx8 
 spec:
   tls:
     - hosts: 
-      - n8n-kevin.lab.sspcloud.fr
+      - n8n-kevinc.lab.sspcloud.fr
 
   rules:
-  - host: n8n-kevin.lab.sspcloud.fr
+  - host: n8n-kevinc.lab.sspcloud.fr
     http:
       paths:
       - pathType: Prefix
         path: "/"
         backend:
           service:
-            name: n8n-kevin
+            name: n8n-kevin-85bc5597d-xhdx8 
             port: 
               number: 80
